@@ -13,6 +13,41 @@ document.addEventListener("DOMContentLoaded", function () {
   if (activeLink) activeLink.setAttribute("aria-current", "page");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  const themeToggleButtons = document.querySelectorAll(".theme-toggle");
+  let darkThemeEnabled = false;
+  try {
+    darkThemeEnabled = window.localStorage.getItem("hs-electrical-theme") === "dark";
+  } catch (error) {
+    console.warn("The saved colour theme could not be read.", error);
+  }
+
+  function updateTheme(enabled, savePreference) {
+    darkThemeEnabled = enabled;
+    document.documentElement.dataset.theme = enabled ? "dark" : "light";
+    themeToggleButtons.forEach(function (button) {
+      button.setAttribute("aria-pressed", String(enabled));
+      button.setAttribute("aria-label", enabled ? "Switch to light mode" : "Switch to dark mode");
+      button.title = enabled ? "Switch to light mode" : "Switch to dark mode";
+      const label = button.querySelector(".theme-toggle-text");
+      if (label) label.textContent = enabled ? "Light mode" : "Dark mode";
+    });
+
+    if (savePreference) {
+      try {
+        window.localStorage.setItem("hs-electrical-theme", enabled ? "dark" : "light");
+      } catch (error) {
+        console.warn("The colour theme could not be saved.", error);
+      }
+    }
+  }
+
+  updateTheme(darkThemeEnabled, false);
+  themeToggleButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      updateTheme(!darkThemeEnabled, true);
+    });
+  });
+
   if (nav && menuToggle) {
     menuToggle.addEventListener("click", function () {
       const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
@@ -99,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Wireless CCTV Cameras": "Wireless camera options can reduce video cabling but still depend on power, network coverage and site conditions. Let’s check what would be practical for your property.",
     "HD Security Cameras": "HD cameras can offer detailed video for important areas. Resolution, lens, lighting and recording equipment all affect the final result and should be considered together.",
     "Night Vision Cameras": "Night-vision options are designed to support visibility in low-light conditions. Available night performance varies by model and the lighting around the installation area.",
-    "IP Cameras": "IP cameras connect through a network and may offer remote viewing and other features depending on the selected model, network setup and recording system."
+    "IP Cameras": "IP cameras connect through a network and may support remote viewing. PTZ models can pan, tilt and zoom where supported; the right choice depends on camera features, network setup and recording equipment."
   };
   const productDialog = document.querySelector(".product-dialog");
   const productTitle = document.querySelector("#product-dialog-title");

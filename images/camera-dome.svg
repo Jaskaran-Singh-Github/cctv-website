@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title">
+  <title id="title">Dome CCTV camera illustration</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10243c"/><stop offset="1" stop-color="#263d51"/></linearGradient>
+    <linearGradient id="body" x2=".8" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#cfd8df"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#566c7b"/><stop offset="1" stop-color="#132638"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h600v400H0z"/>
+  <circle cx="475" cy="92" r="118" fill="#e58a3a" opacity=".12"/>
+  <path d="M0 310 600 240v160H0z" fill="#0b1a2a" opacity=".45"/>
+  <path d="M80 76h440M80 91h440" stroke="#90a2af" stroke-opacity=".14"/>
+  <path d="M184 120h232v24H184z" rx="8" fill="#dbe2e7"/>
+  <path d="M171 143h258c0 77-56 132-129 132s-129-55-129-132Z" fill="url(#body)"/>
+  <path d="M201 160h198c-5 52-43 92-99 92s-94-40-99-92Z" fill="url(#glass)"/>
+  <ellipse cx="300" cy="160" rx="99" ry="13" fill="#f7fafb"/>
+  <ellipse cx="300" cy="172" rx="55" ry="25" fill="#182c3f"/>
+  <circle cx="300" cy="172" r="17" fill="#dbe5e9"/>
+  <circle cx="300" cy="172" r="9" fill="#284a61"/>
+  <path d="M244 145h112" stroke="#e98d43" stroke-width="4" stroke-linecap="round"/>
+  <path d="M85 333h76" stroke="#e58a3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M165 333h38" stroke="#5aa67a" stroke-width="4" stroke-linecap="round"/>
+</svg>

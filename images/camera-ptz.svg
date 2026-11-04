@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title">
+  <title id="title">Pan-tilt-zoom PTZ security camera illustration</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15293e"/><stop offset="1" stop-color="#394e5d"/></linearGradient>
+    <linearGradient id="shell" x2=".8" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c5d0d7"/></linearGradient>
+    <linearGradient id="lens" x2="1" y2="1"><stop stop-color="#7296a5"/><stop offset="1" stop-color="#10263a"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h600v400H0z"/>
+  <circle cx="465" cy="83" r="118" fill="#e58a3a" opacity=".12"/>
+  <path d="M0 318h600v82H0z" fill="#0b1a2a" opacity=".42"/>
+  <path d="M95 91h410" stroke="#c3cdd3" stroke-opacity=".17"/>
+  <path d="M258 102h84v30h-84z" rx="8" fill="#cdd6dc"/>
+  <path d="M276 132v32h48v-32" fill="#aab8c0"/>
+  <path d="M214 171c0-32 38-52 86-52s86 20 86 52v19H214z" fill="url(#shell)"/>
+  <path d="M206 187h188v34c0 55-39 95-94 95s-94-40-94-95z" fill="url(#shell)"/>
+  <path d="M226 196h148v29c0 42-31 72-74 72s-74-30-74-72z" fill="#24394d"/>
+  <ellipse cx="300" cy="217" rx="55" ry="40" fill="url(#lens)"/>
+  <circle cx="300" cy="217" r="22" fill="#12263a"/>
+  <circle cx="300" cy="217" r="11" fill="#8bb4bd"/>
+  <circle cx="300" cy="217" r="5" fill="#f3f5f2"/>
+  <path d="M263 148h74" stroke="#e58a3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 337h70" stroke="#e58a3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M165 337h38" stroke="#5aa67a" stroke-width="4" stroke-linecap="round"/>
+</svg>

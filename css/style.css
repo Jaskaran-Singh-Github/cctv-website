@@ -457,3 +457,106 @@ body { font-size: 16px; line-height: 1.75; }
   .button { min-height: 50px; padding-inline: 17px; font-size: 12px; }
   .service-card-body h3, .product-info h3 { font-size: 17px; }
 }
+
+:root {
+  color-scheme: light;
+  --red: #d97824;
+  --red-dark: #bc5e18;
+  --india-green: #287c54;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #101b28;
+  --soft: #152434;
+  --ink: #e7edf3;
+  --muted: #a9b7c5;
+  --line: #2a3a4b;
+}
+
+body { background: var(--paper); transition: background-color .2s ease, color .2s ease; }
+.site-header { position: sticky; }
+.site-header::before { position: absolute; z-index: 1; inset: 0 0 auto; height: 3px; background: linear-gradient(90deg, #e88936 0 33.333%, #fff 33.333% 66.666%, #298056 66.666%); content: ""; }
+.theme-toggle { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; gap: 8px; padding: 0 11px; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; background: var(--paper); font-size: 11px; font-weight: 700; white-space: nowrap; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s; }
+.theme-toggle:hover { border-color: var(--red); }
+.theme-toggle:focus-visible { outline: 3px solid rgba(217,120,36,.4); outline-offset: 3px; }
+.theme-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.theme-icon-sun { display: none; }
+.site-header { background: var(--paper); }
+.primary-nav > a:not(.nav-cta) { color: #516071; }
+.trust-strip { background: var(--paper); }
+.trust-icon { border-color: rgba(217,120,36,.25); }
+.intro-copy .lead { color: var(--ink); }
+.service-card { background: var(--paper); border-color: var(--line); }
+.service-icon { border-color: var(--paper); }
+.process-icon, .contact-icon { background: rgba(217,120,36,.1); }
+.value-card:not(.value-card-dark), .product-card { background: var(--paper); border-color: var(--line); }
+.product-image { background: #e6eaed; }
+.contact-form input, .contact-form select, .contact-form textarea { color: var(--ink); background: var(--paper); border-color: var(--line); }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--red); }
+.map-section { background: var(--paper); }
+.photo-stamp { border-color: var(--paper); }
+.product-dialog { color: var(--ink); background: var(--paper); }
+.dialog-close { color: var(--ink); }
+.site-footer { color: #ccd5de; background: #071321; }
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .primary-nav,
+html[data-theme="dark"] .trust-strip,
+html[data-theme="dark"] .service-card,
+html[data-theme="dark"] .value-card:not(.value-card-dark),
+html[data-theme="dark"] .product-card,
+html[data-theme="dark"] .product-dialog,
+html[data-theme="dark"] .contact-form-card,
+html[data-theme="dark"] .map-section,
+html[data-theme="dark"] .contact-form input,
+html[data-theme="dark"] .contact-form select,
+html[data-theme="dark"] .contact-form textarea,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .process-number { background-color: var(--paper); }
+
+html[data-theme="dark"] .brand-copy strong,
+html[data-theme="dark"] .primary-nav > a:not(.nav-cta),
+html[data-theme="dark"] .intro-copy h2,
+html[data-theme="dark"] .section-heading h2,
+html[data-theme="dark"] .contact-details h2,
+html[data-theme="dark"] .map-copy h2,
+html[data-theme="dark"] .value-card h3,
+html[data-theme="dark"] .approach-card h3,
+html[data-theme="dark"] .service-card-body h3,
+html[data-theme="dark"] .product-info h3,
+html[data-theme="dark"] .form-heading h2,
+html[data-theme="dark"] .contact-method strong,
+html[data-theme="dark"] .contact-whatsapp,
+html[data-theme="dark"] .process-step h3,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .contact-form label,
+html[data-theme="dark"] .product-dialog h2,
+html[data-theme="dark"] .theme-toggle { color: #e7edf3; }
+
+html[data-theme="dark"] .intro-copy h2 span,
+html[data-theme="dark"] .section-heading h2 span,
+html[data-theme="dark"] .contact-details h2 span,
+html[data-theme="dark"] .map-copy h2 span { color: #9cabb9; }
+html[data-theme="dark"] .primary-nav > a:not(.nav-cta):hover,
+html[data-theme="dark"] .primary-nav > a[aria-current="page"] { color: #fff; }
+html[data-theme="dark"] .intro-copy .lead { color: #c4cfda; }
+html[data-theme="dark"] .contact-form input::placeholder,
+html[data-theme="dark"] .contact-form textarea::placeholder { color: #8393a3; }
+html[data-theme="dark"] .contact-form input,
+html[data-theme="dark"] .contact-form select,
+html[data-theme="dark"] .contact-form textarea { border-color: var(--line); }
+html[data-theme="dark"] .process-number { color: #a9b7c5; }
+html[data-theme="dark"] .product-image { background: #1b2b3a; }
+html[data-theme="dark"] .map-frame iframe { filter: grayscale(.85) contrast(.9) brightness(.78); }
+html[data-theme="dark"] .photo-stamp { border-color: var(--paper); }
+html[data-theme="dark"] .theme-icon-moon { display: none; }
+html[data-theme="dark"] .theme-icon-sun { display: block; }
+
+@media (max-width: 980px) {
+  .theme-toggle { padding-inline: 9px; }
+}
+
+@media (max-width: 760px) {
+  .theme-toggle { align-self: center; margin: 0; padding-inline: 9px; }
+}

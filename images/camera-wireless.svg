@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title">
+  <title id="title">Wireless indoor security camera illustration</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#182c40"/><stop offset="1" stop-color="#526775"/></linearGradient>
+    <linearGradient id="camera" x2=".8" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c7d2d9"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h600v400H0z"/>
+  <circle cx="454" cy="94" r="114" fill="#e58a3a" opacity=".15"/>
+  <path d="M0 294h600v106H0z" fill="#0b1a2a" opacity=".38"/>
+  <path d="M85 88h430v205H85z" fill="#fff" opacity=".035" stroke="#d7e1e7" stroke-opacity=".25"/>
+  <path d="M120 293h360" stroke="#9eacb5" stroke-opacity=".3" stroke-width="3"/>
+  <path d="M270 96c14-19 46-19 60 0M253 80c24-33 70-33 94 0M238 63c34-47 91-47 124 0" fill="none" stroke="#f0a04b" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <path d="M270 153c0-23 17-40 41-40s41 17 41 40v53H270z" fill="url(#camera)"/>
+  <path d="m271 195-31 34v34h71v-34l-31-34z" fill="url(#camera)"/>
+  <path d="M240 229h71v33h-71z" rx="13" fill="#f4f6f7"/>
+  <circle cx="276" cy="246" r="13" fill="#233e52"/>
+  <circle cx="276" cy="246" r="6" fill="#77b5c5"/>
+  <circle cx="298" cy="166" r="4" fill="#5aa67a"/>
+  <path d="M90 334h65" stroke="#e58a3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M159 334h37" stroke="#5aa67a" stroke-width="4" stroke-linecap="round"/>
+</svg>
